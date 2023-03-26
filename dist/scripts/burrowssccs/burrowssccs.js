@@ -33,17 +33,9 @@ var kolmafia = require("kolmafia"), console = {
 };
 
 // src/main.ts
-var import_kolmafia2 = require("kolmafia");
-
-// src/helper.ts
 var import_kolmafia = require("kolmafia");
-function testFunction() {
-  (0, import_kolmafia.print)("testFunction called");
-}
-
-// src/main.ts
 function main() {
-  (0, import_kolmafia2.print)("Hello world!"), testFunction();
+  (0, import_kolmafia.print)("Hello world?!");
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {});
