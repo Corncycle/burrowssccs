@@ -24,15 +24,19 @@
     "@types/babel__core": "^7.1.19",
     "@types/babel__preset-env": "^7.9.2",
     "@types/node": "^18.6.3",
-    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.32.0",
     "create-kolmafia-script": "latest",
     "esbuild": "^0.14.51",
     "esbuild-plugin-babel": "^0.2.3",
-    "eslint": "^8.21.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-libram": "^0.2.13",
+    "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "typescript": "*"
   }
 }
