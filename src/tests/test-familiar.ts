@@ -1,7 +1,7 @@
 import { cliExecute, equip, takeStorage, use, useFamiliar } from 'kolmafia'
-import { $familiar, $item, $skill, $slot } from 'libram'
+import { $effect, $familiar, $item, $skill, $slot } from 'libram'
 
-import { doTest, smartHagnk, smartSkill } from '../util'
+import { doTest, monkeyWish, smartHagnk, smartSkill } from '../util'
 
 export function doTestFamiliar() {
     cliExecute('pool 1')
@@ -16,6 +16,8 @@ export function doTestFamiliar() {
     equip($item`Daylight Shavings Helmet`)
 
     use($item`silver face paint`)
+
+    monkeyWish($effect`Joy`)
 
     smartHagnk($item`recording of Chorale of Companionship`, 15000)
     use($item`recording of Chorale of Companionship`)

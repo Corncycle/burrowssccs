@@ -5,8 +5,11 @@ import { doTest, smartSkill } from '../util'
 
 export function doTestItem() {
     cliExecute('retrocape muscle')
-    cliExecute('pillkeeper semirare')
-    adv1($location`The Limerick Dungeon`, -1, '')
+
+    cliExecute('garden pick')
+    use($item`peppermint sprout`)
+    cliExecute('synth peppermint sprout, peppermint twist')
+
     equip($item`li'l ninja costume`)
     equip($item`A light that never goes out`)
     equip($item`vampyric cloake`)

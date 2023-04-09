@@ -259,11 +259,11 @@ export function doTestMys() {
     smartSkill($skill`The Ode to Booze`, 2)
     use($item`astral six-pack`)
 
-    if (myLevel() < 15) {
+    if (myLevel() < 14) {
         if (myLevel() < 11) {
             abort("This is really worrying. We're somehow not even level 11 for pilsners")
         }
-        abort("We should probably be worried we didn't reach level 15 from our powerleveling")
+        abort("We should probably be worried we didn't reach level 14 from our powerleveling")
     }
 
     drink($item`astral pilsner`, 6)

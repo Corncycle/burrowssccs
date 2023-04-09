@@ -17,6 +17,7 @@ export function doTestNoncombat() {
     cliExecute('cast invisible avatar')
 
     useFamiliar($familiar`Disgeist`)
+    equip($item`astral pet sweater`)
 
     smartSkill($skill`Smooth Movement`)
     smartSkill($skill`The Sonata of Sneakiness`)
@@ -24,6 +25,12 @@ export function doTestNoncombat() {
     equip($item`Brutal brogues`, $slot`acc1`)
     buy($item`porkpie-mounted popper`)
     equip($item`porkpie-mounted popper`)
+
+    cliExecute('parka nc')
+    equip($item`Jurassic Parka`)
+
+    cliExecute('umbrella nc')
+    equip($item`unbreakable umbrella`)
 
     cliExecute('swim sprints')
 

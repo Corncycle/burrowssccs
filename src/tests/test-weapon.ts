@@ -62,7 +62,8 @@ export function doTestWeapon() {
     cliExecute('drink 1 sockdollager')
     cliExecute('cargo 284')
     use($item`yeg's motel toothbrush`)
-    buy($item`wasabi marble soda`)
+    buy($item`wasabi marble soda`.seller, 1, $item`wasabi marble soda`)
+    use($item`wasabi marble soda`)
     cliExecute('pool 1')
 
     smartHagnk($item`pixel star`, 40000)

@@ -19,6 +19,9 @@ import {
     takeStorage,
     buyUsingStorage,
     abort,
+    Effect,
+    myHash,
+    toString,
 } from 'kolmafia'
 import { $item, MagicalSausages, get, set } from 'libram'
 
@@ -160,4 +163,8 @@ export function smartHagnk(it: Item, maxPrice: number) {
     } else {
         abort(`Couldn't buy ${it} for ${maxPrice} meat to pull`)
     }
+}
+
+export function monkeyWish(ef: Effect) {
+    visitUrl(`choice.php?whichchoice=1501&pwd=${myHash()}&wish=${ef}&option=1`)
 }
