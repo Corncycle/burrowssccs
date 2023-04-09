@@ -35,7 +35,7 @@ export function doTestSpell() {
     equip($item`li'l candy corn costume`)
     equip($item`hewn moon-rune spoon`, $slot`acc1`)
 
-    smartSkill($skill`Astrla Shell`)
+    smartSkill($skill`Astral Shell`)
     smartSkill($skill`Elemental Saucesphere`)
     visitUrl('clan_viplounge.php?action=hottub')
     smartSkill($skill`Deep Dark Visions`)

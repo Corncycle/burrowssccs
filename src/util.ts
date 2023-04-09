@@ -65,7 +65,7 @@ export function clearBCProperties() {
 export function testDone(testConstant: number) {
     print(`Checking test ${testConstant}...`)
     const text = visitUrl('council.php')
-    return !text.includes(`<input type=hidden name=option value=${testConstant}>`)
+    return !text.includes(`<input type=hidden name=option value=${testConstant}>`.toString())
 }
 
 export function upgradeSaber(upgrade: number) {

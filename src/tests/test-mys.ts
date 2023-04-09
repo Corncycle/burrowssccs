@@ -58,7 +58,7 @@ export function doTestMys() {
     use($item`volleyball`)
 
     useFamiliar($familiar`exotic parrot`)
-    //abort()
+
     pizza(
         $item`hot buttered roll`,
         $item`gnollish autoplunger`,
@@ -76,8 +76,7 @@ export function doTestMys() {
     smartSkill($skill`inscrutable gaze`)
     use($item`a ten-percent bonus`)
     visitUrl('place.php?whichplace=town_right&action=townright_vote')
-    //abort()
-    visitUrl(`choice.php?pwd=${myHash()}&option=1&whichchoice=1331&g=2&local%5B%5D=0&local%5B%5D=2`)
+    visitUrl(`choice.php?pwd=${myHash()}&option=1&whichchoice=1331&g=2&local%5B%5D=2&local%5B%5D=2`)
 
     smartSkill($skill`carol of the thrills`)
     cliExecute('beach head You Learned Something Maybe!')
@@ -116,7 +115,6 @@ export function doTestMys() {
     cliExecute('cast feel excitement')
     cliExecute('fortune buff hagnk')
 
-    //abort()
     if (get('_daycareGymScavenges') === 0) {
         visitUrl('place.php?whichplace=town_wrong&action=townwrong_boxingdaycare')
         runChoice(3)
@@ -175,7 +173,7 @@ export function doTestMys() {
     use($item`philter of phorce`)
     use($item`tomato juice of powerful power`)
 
-    cliExecute('folk makeshift garbage shirt')
+    cliExecute('fold makeshift garbage shirt')
     equip($item`makeshift garbage shirt`)
 
     const restsLeft = totalFreeRests() - get('timesRested')

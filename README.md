@@ -1,8 +1,8 @@
 # burrowssccs
 
-A softcore CS script for The Kingdom of Loathing built with [create-kolmafia-script](https://socket.dev/npm/package/create-kolmafia-script)
+A personal softcore CS script for The Kingdom of Loathing built with [create-kolmafia-script](https://socket.dev/npm/package/create-kolmafia-script)
 
-This is (planned to be) a TS rewrite of an ash script I used for ~500 sccs ascensions which was heavily based on an old ash version of [bean-hccs](https://github.com/phulin/bean-hccs).
+This is a TS rewrite of an ash script I used for ~500 sccs ascensions which was heavily based on an old ash version of [bean-hccs](https://github.com/phulin/bean-hccs).
 
 This script is not intended to be applicable to an arbitrary account, and will almost certainly fail if your CS-relevant perms/iotms are not a superset of [mine](https://api.aventuristo.net/av-snapshot?u=burrows).
 
@@ -14,7 +14,7 @@ General information for the run is given at the following links:
 
 [Skills/IOTMs/shinies used](https://docs.google.com/spreadsheets/d/1DfqPO_DJg4ybxafMgkyJ2MrMG5h2GNrhvOAH88CyLB8/edit#gid=572413316)
 
-[In-depth route description](https://docs.google.com/spreadsheets/d/1DfqPO_DJg4ybxafMgkyJ2MrMG5h2GNrhvOAH88CyLB8/edit#gid=720077073)
+[Step-by-step route description](https://docs.google.com/spreadsheets/d/1DfqPO_DJg4ybxafMgkyJ2MrMG5h2GNrhvOAH88CyLB8/edit#gid=720077073)
 
 The built script can be run by entering `burrowssccs` into the KoLmafia CLI.
 

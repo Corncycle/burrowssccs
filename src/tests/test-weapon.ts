@@ -52,7 +52,7 @@ export function doTestWeapon() {
 
     smartSkill($skill`Blood Frenzy`)
     smartSkill($skill`Scowl of the Auk`)
-    smartSkill($skill`Ragea of the Reindeer`)
+    smartSkill($skill`Rage of the Reindeer`)
     smartSkill($skill`Jackasses' Symphony of Destruction`)
     smartSkill($skill`Tenacity of the Snapper`)
     smartSkill($skill`Blessing of the War Snapper`)

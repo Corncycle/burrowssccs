@@ -1,4 +1,5 @@
-import { cliExecute } from 'kolmafia'
+import { abort, cliExecute, itemAmount, print, use, visitUrl } from 'kolmafia'
+import { $item, set } from 'libram'
 
 import { doTestCoilWire } from './tests/test-coil-wire'
 import { doTestFamiliar } from './tests/test-familiar'
@@ -9,6 +10,7 @@ import { doTestMox } from './tests/test-mox'
 import { doTestMus } from './tests/test-mus'
 import { doTestMys } from './tests/test-mys'
 import { doTestNoncombat } from './tests/test-noncombat'
+import { doTestSpell } from './tests/test-spell'
 import { doTestWeapon } from './tests/test-weapon'
 import { clearBCProperties, doTest, testDone } from './util'
 
@@ -26,6 +28,12 @@ const TEST_COIL_WIRE = 11
 
 export default function main(): void {
     clearBCProperties()
+    set('customCombatScript', 'burrows_hccs')
+    visitUrl('council.php')
+
+    if (itemAmount($item`diabolic pizza cube`)) {
+        use($item`diabolic pizza cube`)
+    }
 
     if (!testDone(TEST_COIL_WIRE)) {
         doTestCoilWire()
@@ -68,6 +76,7 @@ export default function main(): void {
     }
 
     if (!testDone(TEST_SPELL)) {
+        doTestSpell()
     }
 
     doTest(30)

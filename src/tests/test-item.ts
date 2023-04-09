@@ -30,7 +30,7 @@ export function doTestItem() {
     useFamiliar($familiar`Trick-or-Treating Tot`)
     smartSkill($skill`Fat Leon's Phat Loot Lyric`)
 
-    cliExecute('genie effect Internal Thirst')
+    cliExecute('genie effect Infernal Thirst')
 
     doTest(9)
 }
