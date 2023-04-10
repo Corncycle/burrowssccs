@@ -88,6 +88,10 @@ export function doTestCoilWire() {
         drink(1, $item`perfect dark and stormy`)
     }
 
+    equip($item`Jurassic parka`)
+    cliExecute('parka acid')
+    cliExecute('reminisce swarm of fudge wasps')
+
     useFamiliar($familiar`exotic parrot`)
 
     doTest(11)

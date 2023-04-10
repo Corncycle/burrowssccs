@@ -10,8 +10,9 @@ export function doTestFamiliar() {
     equip($item`hewn moon-rune spoon`, $slot`acc2`)
     equip($item`beach comb`, $slot`acc3`)
 
-    useFamiliar($familiar`Exotic Parrot`)
-    equip($item`cracker`, $slot`familiar`)
+    useFamiliar($familiar`Mini-trainbot`)
+    smartHagnk($item`overloaded yule battery`, -1)
+    equip($item`overloaded yule battery`)
 
     equip($item`Daylight Shavings Helmet`)
 
@@ -25,9 +26,6 @@ export function doTestFamiliar() {
 
     smartHagnk($item`Stephen's lab coat`, -1)
     equip($item`Stephen's lab coat`)
-
-    smartHagnk($item`Greaves of the Murk Lord`, -1)
-    equip($item`Greaves of the Murk Lord`)
 
     cliExecute('modtrace familiar weight')
 

@@ -166,5 +166,6 @@ export function smartHagnk(it: Item, maxPrice: number) {
 }
 
 export function monkeyWish(ef: Effect) {
+    visitUrl(`main.php?action=cmonk&pwd=${myHash()}`)
     visitUrl(`choice.php?whichchoice=1501&pwd=${myHash()}&wish=${ef}&option=1`)
 }

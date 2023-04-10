@@ -1,4 +1,4 @@
-import { abort, cliExecute, itemAmount, print, use, visitUrl } from 'kolmafia'
+import { abort, cliExecute, itemAmount, print, use, visitUrl, waitq } from 'kolmafia'
 import { $item, set } from 'libram'
 
 import { doTestCoilWire } from './tests/test-coil-wire'

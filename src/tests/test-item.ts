@@ -8,7 +8,7 @@ export function doTestItem() {
 
     cliExecute('garden pick')
     use($item`peppermint sprout`)
-    cliExecute('synth peppermint sprout, peppermint twist')
+    cliExecute('synthesize peppermint sprout, peppermint twist')
 
     equip($item`li'l ninja costume`)
     equip($item`A light that never goes out`)
@@ -25,7 +25,6 @@ export function doTestItem() {
     // I don't think we even actually have an item bird
     // smartSkill($skill`Visit your favorite bird`)
 
-    use($item`cyclops eyedrops`)
     smartSkill($skill`Bind Spice Ghost`)
     smartSkill($skill`Steely-Eyed Squint`)
     use($item`bag of grain`)

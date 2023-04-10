@@ -12,6 +12,7 @@ import {
     myBuffedstat,
     myHash,
     myLevel,
+    print,
     runChoice,
     runCombat,
     setProperty,
@@ -19,6 +20,7 @@ import {
     use,
     useFamiliar,
     visitUrl,
+    waitq,
 } from 'kolmafia'
 import {
     $effect,
@@ -35,7 +37,7 @@ import {
 } from 'libram'
 import { mapMonster } from 'libram/dist/resources/2020/Cartography'
 
-import { doTest, ensureHermitItems, freeKillsLeft, pizza, smartSkill } from '../util'
+import { doTest, ensureHermitItems, freeKillsLeft, monkeyWish, pizza, smartSkill } from '../util'
 
 export function doTestMys() {
     cliExecute('garden pick')
@@ -59,12 +61,7 @@ export function doTestMys() {
 
     useFamiliar($familiar`exotic parrot`)
 
-    pizza(
-        $item`hot buttered roll`,
-        $item`gnollish autoplunger`,
-        $item`blood-faced volleyball`,
-        $item`cog and sprocket assembly`
-    )
+    monkeyWish($effect`HGH-charged`)
 
     cliExecute('shower warm')
 
@@ -114,6 +111,8 @@ export function doTestMys() {
     cliExecute('cast triple size')
     cliExecute('cast feel excitement')
     cliExecute('fortune buff hagnk')
+    cliExecute('synthesize fudgecule, wax flask')
+    cliExecute('spacegate vaccine 2')
 
     if (get('_daycareGymScavenges') === 0) {
         visitUrl('place.php?whichplace=town_wrong&action=townwrong_boxingdaycare')
@@ -136,7 +135,6 @@ export function doTestMys() {
     cliExecute('pillkeeper familiar')
 
     smartSkill($skill`The Ode to Booze`)
-    cliExecute("drink 1 Bee's Knees")
     cliExecute('crossstreams')
     cliExecute('monorail buff')
     cliExecute('telescope look high')
