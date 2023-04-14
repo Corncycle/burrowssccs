@@ -11,7 +11,7 @@ import {
 } from 'kolmafia'
 import { $effect, $familiar, $item, $location, $skill, $slot, get } from 'libram'
 
-import { doTest, smartHagnk, smartSkill } from '../util'
+import { doTest, monkeyWish, smartHagnk, smartSkill } from '../util'
 
 export function doTestWeapon() {
     cliExecute('equip acc2 doctor')
@@ -60,8 +60,10 @@ export function doTestWeapon() {
     smartSkill($skill`Carol of the bulls`)
     smartSkill($skill`The Ode to Booze`)
     cliExecute('drink 1 sockdollager')
-    cliExecute('cargo 284')
-    use($item`yeg's motel toothbrush`)
+
+    monkeyWish($effect`spit upon`)
+    monkeyWish($effect`pyramid power`)
+
     buy($item`wasabi marble soda`.seller, 1, $item`wasabi marble soda`)
     use($item`wasabi marble soda`)
     cliExecute('pool 1')

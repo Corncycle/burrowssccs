@@ -1,7 +1,7 @@
 import { buy, cliExecute, craft, equip, myHash, use, useFamiliar, visitUrl } from 'kolmafia'
-import { $familiar, $item, $skill, $slot } from 'libram'
+import { $effect, $familiar, $item, $skill, $slot } from 'libram'
 
-import { doTest, smartSkill } from '../util'
+import { doTest, monkeyWish, smartSkill } from '../util'
 
 export function doTestSpell() {
     // collect batteries
@@ -20,6 +20,11 @@ export function doTestSpell() {
     use($item`LOV Elixir #6`)
     smartSkill($skill`Carol of the Hells`)
     cliExecute('pool 2')
+
+    cliExecute('cargo 177')
+    use($item`yeg's motel hand soap`)
+
+    monkeyWish($effect`Pisces in the Skyces`)
 
     cliExecute("beach head We're All Made of Starfish")
 
