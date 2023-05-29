@@ -40,6 +40,8 @@ import { mapMonster } from 'libram/dist/resources/2020/Cartography'
 import { doTest, ensureHermitItems, freeKillsLeft, monkeyWish, pizza, smartSkill } from '../util'
 
 export function doTestMys() {
+    use($item`MayDay supply package`)
+
     cliExecute('garden pick')
 
     craft('smith', 1, $item`lump of brituminous coal`, $item`third-hand lantern`)
@@ -215,7 +217,7 @@ export function doTestMys() {
 
     useFamiliar($familiar`Pocket Professor`)
 
-    equip($item`Kramco Sausage-o-Matic`)
+    equip($item`Kramco Sausage-o-Matic™`)
     equip($item`Beach Comb`, $slot`acc1`)
     equip($item`Brutal brogues`, $slot`acc3`)
 

@@ -31,10 +31,6 @@ export default function main(): void {
     set('customCombatScript', 'burrows_hccs')
     visitUrl('council.php')
 
-    if (itemAmount($item`diabolic pizza cube`)) {
-        use($item`diabolic pizza cube`)
-    }
-
     if (!testDone(TEST_COIL_WIRE)) {
         doTestCoilWire()
     }
